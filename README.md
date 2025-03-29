@@ -1,7 +1,5 @@
 <head>
-.git {
-  text-decoration:wavy
-}
+<link rel="stylesheet" href="cool.css">
   </head>
 <body>
     
