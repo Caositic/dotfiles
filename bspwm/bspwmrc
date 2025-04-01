@@ -1,0 +1,45 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d I II III IV V
+
+# Autostart
+
+xrandr --output DP-0 --mode 1920x1080 --rate 240
+setxkbmap -layout us,ru -option grp:alt_shift_toggle
+dunst -config $HOME/.config/bspwm/dunstrc &
+flameshot &
+kitty &
+polybar &
+picom --config $HOME/.config/picom/picom.conf &
+
+# Windows manager
+
+bspc config focused_border_color "#7899FA"
+bspc config normal_border_color "#1f222b"
+bspc config border_width        3
+bspc config window_gap          15
+
+# Gaps
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   false
+bspc config gapless_monocle      false
+
+# pointer fix
+xsetroot -cursor_name left_ptr
+
+# Floating windows move
+
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action2 resize_corner
+
+# bspc rules
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
