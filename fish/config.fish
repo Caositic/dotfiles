@@ -1,6 +1,4 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+set -g fish_greeting
+fastfetch
 end
-
-# Added by LM Studio CLI (lms)
-set -gx PATH $PATH /home/yaern/.lmstudio/bin
