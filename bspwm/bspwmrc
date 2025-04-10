@@ -8,15 +8,19 @@ bspc monitor -d I II III IV V
 
 xrandr --output DP-0 --mode 1920x1080 --rate 240
 setxkbmap -layout us,ru -option grp:alt_shift_toggle
+picom --config $HOME/.config/picom/picom.conf &
+exec /usr/lib/xfce-polkit/xfce-polkit &
 dunst -config $HOME/.config/bspwm/dunstrc &
 flameshot &
-kitty &
+alacritty &
 polybar &
-picom --config $HOME/.config/picom/picom.conf &
+nitrogen --restore &
+steam &
+
 
 # Windows manager
 
-bspc config focused_border_color "#7899FA"
+bspc config focused_border_color "#a89ce8"
 bspc config normal_border_color "#1f222b"
 bspc config border_width        3
 bspc config window_gap          15
@@ -32,9 +36,7 @@ xsetroot -cursor_name left_ptr
 
 # Floating windows move
 
-bspc config pointer_action1 move
-bspc config pointer_action2 resize_side
-bspc config pointer_action2 resize_corner
+bspc config pointer_motion_interval 4ms
 
 # bspc rules
 
