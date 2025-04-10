@@ -1,0 +1,64 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "$HOME/.config/fastfetch/ascii.txt",
+    "padding": {
+      "top": 2, 
+      "left": 2,
+      "right": 1
+    },
+    "color": {
+      "1": "38;2;95;95;255",
+      "2": "38;2;135;135;255"
+    }
+  },
+  "display": {},
+  "modules": [
+    {
+      "type": "title",
+      "format": "{#1}\u001b[38;5;105m{user-name}{#}\u001b[3;38;5;103m@{#}\u001b[1;38;5;105m{host-name}{#}"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;5;63m╭──────────────────────────╮"
+    },
+    {
+      "type": "os",
+      "key": " \u001b[38;5;105mOS",
+      "format": "\u001b[38;5;62m{pretty-name}"
+    },
+    {
+      "type": "kernel",
+      "key": " \u001b[38;5;105mKernel",
+      "format": "\u001b[38;5;62m{release}"
+    },
+    {
+      "type": "uptime",
+      "key": " \u001b[38;5;105mUptime",
+      "format": "\u001b[38;5;62m{hours} Hours {minutes} Mins.."
+    },
+    {
+      "type": "shell",
+      "key": " \u001b[38;5;105mShell",
+      "format": "\u001b[38;5;62m{pretty-name} {version}"
+    },
+    {
+      "type": "wm",
+      "key": " \u001b[38;5;105mWM",
+      "format": "\u001b[38;5;62m{pretty-name}"
+    },
+    {
+      "type": "terminal",
+      "key": " \u001b[38;5;105mTerminal",
+      "format": "\u001b[38;5;62m{pretty-name}"
+    },
+    {
+      "type": "custom",
+      "format": "   \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m "
+    },
+    {
+      "type": "custom",
+      "format":"\u001b[38;5;63m╰──────────────────────────╯"
+  }
+  ]
+}
