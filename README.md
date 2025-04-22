@@ -12,4 +12,4 @@
 <div>Wallpaper: Nitrogen</div>
 <div>Multimedia: mpv</div>
 <div>Additional information:</div>
-<p>codex;wine,winegui;rofi-calc,powermenu;obs;grubtheme-particle;prismlauncher;lmstudio;xfce4-polkit</p>
+<p>codex;wine,winegui;rofi-calc,powermenu;obs;grubtheme-particle;prismlauncher;lmstudio;xfce4-polkit;nerdfonts</p>
