@@ -11,3 +11,5 @@
 <div>Image Reader: sxiv</div>
 <div>Wallpaper: Nitrogen</div>
 <div>Multimedia: mpv</div>
+<div>Additional information:</div>
+codex;wine,winegui;rofi-calc,powermenu;obs;grubtheme-particle;prismlauncher;lmstudio
