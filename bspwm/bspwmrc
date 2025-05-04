@@ -6,7 +6,7 @@ bspc monitor -d I II III IV V
 
 # Autostart
 
-xrandr --output DP-0 --mode 1920x1080 --rate 240
+xrandr --output DP-1 --mode 1920x1080 --rate 240
 setxkbmap -layout us,ru -option grp:alt_shift_toggle
 picom --config $HOME/.config/picom/picom.conf &
 exec /usr/lib/xfce-polkit/xfce-polkit &
@@ -44,3 +44,4 @@ bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+bspc rule -a pavucontrol state=floating
