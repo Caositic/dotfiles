@@ -21,10 +21,10 @@ fi
 # Split into official repos (pacman) and AUR (paru) for efficiency
 echo "Installing packages..."
 PACKAGES_PACMAN=(
-    pinta obs-studio qalculate-gtk mpv sxiv fish alacritty fastfetch
+    obs-studio qalculate-gtk libqalculate mpv sxiv fish alacritty fastfetch nerd-fonts
 )
 PACKAGES_AUR=(
-    google-chrome prismlauncher ttf-nerd-fonts-symbols-common # or nerd-fonts-complete if available
+    google-chrome prismlauncher pinta # or nerd-fonts-complete if available
 )
 
 sudo pacman -S --needed --noconfirm "${PACKAGES_PACMAN[@]}"
