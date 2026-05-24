@@ -24,7 +24,7 @@ PACKAGES_PACMAN=(
     pinta obs-studio qalculate-gtk mpv sxiv fish alacritty fastfetch
 )
 PACKAGES_AUR=(
-    google-chrome prism-launcher ttf-nerd-fonts-symbols-common # or nerd-fonts-complete if available
+    google-chrome prismlauncher ttf-nerd-fonts-symbols-common # or nerd-fonts-complete if available
 )
 
 sudo pacman -S --needed --noconfirm "${PACKAGES_PACMAN[@]}"
